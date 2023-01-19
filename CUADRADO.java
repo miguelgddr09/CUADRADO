@@ -7,9 +7,9 @@ public class CUADRADO {
 
 	public CUADRADO(int a) {
 		int num=a;
-		area=num*num;
+		area=(double) Math.pow(num, 2);
 		perimetro=num*4;
-		diagonal=(double) Math.sqrt((num*num)+(num*num));
+		diagonal=(double) Math.sqrt(area+area);
 	}
 	
 	public double impresionA() {
