@@ -5,22 +5,25 @@ public class CUADRADO {
 	public int num;
 	public double area, perimetro, diagonal;
 
-	public CUADRADO(int a) {
-		int num=a;
-		area=(double) Math.pow(num, 2);
-		perimetro=num*4;
-		diagonal=(double) Math.sqrt(area+area);
+	public CUADRADO(int num) {
+		this.num=num;
+	}
+	CUADRADO(){
+		this(178607);
 	}
 	
 	public double impresionA() {
+		area=(double) Math.pow(num, 2);
 		return area;
 	}
 	public double impresionB() {
+		perimetro=num*4;
 		return perimetro;
 	}
 	public double impresionC() {
+		diagonal=(double) Math.sqrt(area+area);
 		return diagonal;
-	}
+	}	
 	
 	
 	
