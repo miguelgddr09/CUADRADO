@@ -3,7 +3,6 @@ package package1;
 public class CUADRADO {
 
 	public int num;
-	public double area, perimetro, diagonal;
 
 	public CUADRADO(int num) {
 		this.num=num;
@@ -13,15 +12,16 @@ public class CUADRADO {
 	}
 	
 	public double impresionA() {
-		area=(double) Math.pow(num, 2);
+		double area=(double) Math.pow(num, 2);
 		return area;
 	}
 	public double impresionB() {
-		perimetro=num*4;
+		double perimetro=num*4;
 		return perimetro;
 	}
 	public double impresionC() {
-		diagonal=(double) Math.sqrt(area+area);
+		double area=(double) Math.pow(num, 2);
+		double diagonal=(double) Math.sqrt(area+area);
 		return diagonal;
 	}	
 	
